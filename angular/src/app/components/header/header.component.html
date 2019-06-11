@@ -1,0 +1,19 @@
+<div id='header'>
+    <blockquote>
+      “Peu de choses sont impossibles à qui est assidu et compétent... Les grandes oeuvres jaillissent non de la force mais de la persévérance.”
+      <cite>Johnatan Swift</cite>
+    </blockquote>
+</div>
+<nav>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">
+          <a routerLink="/questions" routerLinkActive="active">Home</a>
+        </mat-button-toggle>
+      <mat-button-toggle value="italic">
+          <a routerLink="/question-add" routerLinkActive="active"><img src="assets/plus.svg"></a>
+      </mat-button-toggle>
+      <mat-button-toggle value="underline">
+          <a routerLink="/question-edit-list" routerLinkActive="active">Gérer</a>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+</nav>

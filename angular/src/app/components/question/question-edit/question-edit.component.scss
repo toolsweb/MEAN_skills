@@ -1,0 +1,16 @@
+:host
+{
+    width: 80%;
+    height: 100%;
+}
+.question-form {
+    display: flex;
+    flex-direction: column;
+}
+
+button
+{
+    float: right;
+    margin-bottom: 1vh;
+    width: 10vh;
+}

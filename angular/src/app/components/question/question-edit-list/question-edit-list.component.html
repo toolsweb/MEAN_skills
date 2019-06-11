@@ -1,0 +1,24 @@
+<!-- <div *ngIf='questions'>
+    <li  *ngFor="let question of (questions|skills:filterSkill);index as i;">
+        {{i}} {{question.content}} 
+        {{question._id}}
+        <a [routerLink]="['/question-edit/',question._id]">edit</a>
+
+    </li>
+</div> -->
+
+<mat-accordion  *ngFor="let question of (questions|skills:filterSkill);index as i;">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+        {{question.content}} 
+        </mat-panel-title>
+        <mat-panel-description>
+                <a [routerLink]="['/question-edit/',question._id]"><img src='assets/pencil.svg'></a>
+            <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+    </mat-expansion-panel>
+</mat-accordion>

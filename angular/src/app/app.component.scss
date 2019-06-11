@@ -1,0 +1,24 @@
+html, body {
+    width: 100%;
+    color: #444;
+    height: 100%;
+}
+
+:host
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+      flex-direction: column;
+}
+
+#app-center {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+router-outlet {
+    display:none;
+}

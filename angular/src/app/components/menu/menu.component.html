@@ -1,0 +1,14 @@
+
+<div>
+    <div *ngFor="let skill of skills; index as i;">
+        <p *ngIf="!i" (click)="filterBySkill()">All</p>
+        <p (click)="filterBySkill(skill._id)">{{i}} {{skill.name}}</p>
+    </div>
+</div>
+
+<!-- <mat-chip-list aria-label="Fish selection">
+    <mat-chip (click)="filterBySkill()">All</mat-chip>
+    <mat-chip color="accent" *ngFor="let skill of skills; index as i;">
+        <span (click)="filterBySkill(skill._id)">{{skill.name}}</span>
+    </mat-chip>
+</mat-chip-list> -->

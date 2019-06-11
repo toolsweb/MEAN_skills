@@ -1,0 +1,21 @@
+<div>
+    <form #questionForm="ngForm"  (ngSubmit)="onSubmit(questionForm)">
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" name="content"  
+      ngModel
+      #contentField="ngModel"
+      required>
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="skill" name="skill" ngModel
+        #skillField="ngModel"
+         required>
+          <option *ngFor="let skill of skills" [value]="skill._id">{{skill.name}}</option>
+        </select>
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+  </form>
+    
+</div>
