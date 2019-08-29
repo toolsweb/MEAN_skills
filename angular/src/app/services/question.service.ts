@@ -5,7 +5,7 @@ import { catchError, tap, map } from 'rxjs/operators';
 import { Question } from '../models/Question';
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/json'})
+ headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
 const apiUrl = "http://localhost:3000/questions";
 @Injectable({
